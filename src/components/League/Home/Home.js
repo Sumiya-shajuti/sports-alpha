@@ -1,7 +1,6 @@
-import React, { useEffect, useState ,} from 'react';
+import React, { useEffect, useState, } from 'react';
 import League from '../League';
-import { useParams } from 'react-router';
-
+import './Home.css';
 
 const Home = () => {
     const [leagues, setLeagues] = useState([]);
@@ -11,25 +10,37 @@ const Home = () => {
             .then(res => res.json())
             .then((data) => {
                 const allLeagues = data.leagues
-                const leagues15 = allLeagues.slice(0,15)
+                const leagues15 = allLeagues.slice(0, 15)
                 setLeagues(leagues15)
             })
-        
     }, []);
-   
     return (
-        <div style={{ 
-            backgroundImage: `url("https://www.lawinsport.com/media/zoo/images/The-stadium_01982368c4b5db6822abe729707173d7.jpeg")` 
-          }}>
-        <div className="container mt-5 ms-5 ">
-            <h1 className="text-success d-flex justify-content-center ">Sports Alpha</h1>
-            {/* <h1>Leagues: {leagues.length}</h1> */}
-            <div className="row row-cols-4 bg-primary d-flex justify-content-center" >
-            {
-                leagues.map(league => <League league={league}></League>)
-            }
-        </div>
-        </div>
+        <div className="container mt-6 ms-6 ">
+
+            {/* static banner image */}
+            <div className="Background">
+
+                {/* title */}
+                <h1 className="text-light bg-dark d-flex justify-content-around">Sports Alpha</h1>
+            </div>
+
+            {/* condition based responsive */}
+            {/* for desktop content */}
+            <div className="deskContent">
+                <div className="row row-cols-4 d-flex justify-content-center shadow-lg p-4 mb-4bg-body rounded" >
+                    {
+                        leagues.map(league => <League league={league}></League>)
+                    }
+                </div>
+            </div>
+            {/* For phone content */}
+            <div className="phoneContent">
+                <div className="row" >
+                    {
+                        leagues.map(league => <League league={league}></League>)
+                    }
+                </div>
+            </div>
         </div>
     );
 };

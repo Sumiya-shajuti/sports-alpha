@@ -1,4 +1,3 @@
-import React, { useEffect, useState,Card,CardDeck } from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -11,25 +10,23 @@ import NoMatch from './NoMatch/NoMatch';
 import LeagueDetail from './components/LeagueDetail/LeagueDetail';
 
 function App() {
-     return (
+  return (
     <Router>
-    <Switch>
-      <Route path="/home">
-        <Home/>
-              </Route>
-              <Route path="/league/:idLeague">
-                <LeagueDetail/>
-              </Route>
-              <Route exact path="/">
+      <Switch>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/league/:idLeague">
+          <LeagueDetail />
+        </Route>
+        <Route exact path="/">
           <Home />
         </Route>
         <Route path="*">
-            <NoMatch />
-          </Route>
-    </Switch>
+          <NoMatch />
+        </Route>
+      </Switch>
     </Router>
- 
   );
-  } 
-
+}
 export default App;

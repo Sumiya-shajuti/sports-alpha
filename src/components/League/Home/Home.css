@@ -1,0 +1,22 @@
+.Background{
+    background-image:  url("https://i.pinimg.com/originals/81/dd/d3/81ddd367e580ac8909ea032cca1a50ca.jpg") ;
+    background-size: cover;
+    height: 350px;
+    width: auto;
+}
+/* // Small devices (landscape phones,) */
+
+@media all and (min-width: 680px) {
+    .deskContent {display:block;}
+    .phoneContent {display:none;}
+}
+
+@media all and (max-width: 579px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block;}
+}
+
+
+
+
+  
