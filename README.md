@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 
 
@@ -8,7 +8,7 @@ which explore the new hope.Here are 15 leagues and there logo image .This websit
 Live Website 
 
 Front-end Technology :
-React.js
-Bootstrap5
-CSS3
+1.React.js
+2.Bootstrap5
+3.CSS3
 
