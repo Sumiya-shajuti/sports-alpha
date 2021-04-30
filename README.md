@@ -8,6 +8,7 @@ Sports Alpha
 
 This is a sports website to select any league. which name is sports alpha.You know what?Alpha means beginning.
 which explore the new hope.Here are many leagues and there logo image, individual leagues players,founded time,players gender,their country and more details.
+Live Site: https://gallant-jackson-9e871a.netlify.app/
 
 Features:
 Visitors are able to see all leagues
