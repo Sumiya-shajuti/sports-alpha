@@ -17,7 +17,6 @@ Individual leagues logo,players
 Visit favorite leagues facebook page,Twitter
 
 
-
  Technology :
  
 1.React.js
